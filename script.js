@@ -1,11 +1,10 @@
-// Base de datos de traducciones
+// Base de datos de traducciones (Sin el texto del botón de escuchar)
 const translations = {
     es: {
         heroBadge: "Feria de Innovación Tecnológica",
         heroTitle: "Tu voz en tus manos",
         heroSubtitle: "Rompiendo barreras en la rutina diaria a través de Inteligencia Artificial.",
         btnLearn: "Saber más",
-        btnListen: 'Escuchar "UNMUTE"',
         aboutTitle: "El Desafío Diario",
         aboutText: "Imaginar ir a pedir un café, preguntar por una dirección en la calle o comprar un boleto de autobús, y no poder hacerte entender. Para los más de 430 millones de personas sordas en el mundo, la rutina diaria está llena de estas barreras invisibles. UNMUTE nace para devolver la autonomía.",
         widgetDemoTitle: "Simulación del Sistema",
@@ -26,7 +25,6 @@ const translations = {
         heroTitle: "Your voice in your hands",
         heroSubtitle: "Breaking daily barriers through Artificial Intelligence.",
         btnLearn: "Learn more",
-        btnListen: 'Listen to "UNMUTE"',
         aboutTitle: "The Daily Challenge",
         aboutText: "Imagine going to order a coffee, asking for directions on the street, or buying a bus ticket, and not being able to make yourself understood. For the more than 430 millions of deaf people worldwide, daily routines are filled with these invisible barriers. UNMUTE was born to restore autonomy.",
         widgetDemoTitle: "System Simulation",
@@ -59,7 +57,6 @@ function setLanguage(lang) {
     document.getElementById('hero-title').innerText = translations[lang].heroTitle;
     document.getElementById('hero-subtitle').innerText = translations[lang].heroSubtitle;
     document.getElementById('btn-learn').innerText = translations[lang].btnLearn;
-    document.getElementById('btn-listen').innerText = translations[lang].btnListen;
     document.getElementById('about-title').innerText = translations[lang].aboutTitle;
     document.getElementById('about-text').innerText = translations[lang].aboutText;
     document.getElementById('widget-demo-title').innerText = translations[lang].widgetDemoTitle;
@@ -74,12 +71,4 @@ function setLanguage(lang) {
     document.getElementById('tech-title').innerText = translations[lang].techTitle;
     document.getElementById('tech-subtitle').innerText = translations[lang].techSubtitle;
     document.getElementById('footer-text').innerText = translations[lang].footerText;
-}
-
-// Reproducción de voz artificial integrada
-function pronounceProjectName() {
-    const textToSpeak = "UNMUTE";
-    const utterance = new SpeechSynthesisUtterance(textToSpeak);
-    utterance.lang = currentLang === 'es' ? 'es-ES' : 'en-US';
-    window.speechSynthesis.speak(utterance);
 }
