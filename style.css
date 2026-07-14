@@ -1,0 +1,168 @@
+/* 
+   Paleta de Colores Aplicada:
+   - Fondo Base: #E7E3E0 (Beige Claro Neutro)
+   - Fondo Alternativo / Secciones: #FFFFFF (Blanco Puro)
+   - Textos / Contraste Oscuro: #292421 (Gris tierra oscuro / Negro suave)
+   - Bordes / Detalles: #A9A098 (Gris Piedra Cálido)
+   - Títulos Secundarios / Hovers: #9B8784 (Gris Pardo)
+   - Botón Primario / Acentos: #A6856A (Marrón Arcilla)
+   - Badges / Éxito / Simulador: #9FA292 (Verde Oliva Apagado)
+*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #E7E3E0; /* Beige Claro Neutro como fondo principal */
+    color: #292421; /* Texto oscuro para legibilidad impecable */
+}
+
+/* Navbar unificada con el fondo */
+.navbar {
+    background-color: #E7E3E0 !important; 
+    border-bottom: 1px solid #A9A098; /* Borde gris piedra fino */
+}
+
+.navbar .navbar-brand {
+    color: #A6856A !important; /* Marca en Marrón Arcilla */
+    font-weight: 800;
+}
+
+/* Hero Section limpia con degradado neutro suave */
+.hero-section {
+    background: linear-gradient(180deg, #E7E3E0 0%, #FFFFFF 100%); /* De beige claro a blanco puro */
+    padding: 100px 0;
+    border-bottom: 1px solid #A9A098;
+    color: #292421;
+}
+
+/* Título de Hero con degradado mineral */
+.text-gradient {
+    background: linear-gradient(90deg, #A6856A 0%, #9B8784 100%); /* De Marrón Arcilla a Gris Pardo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Sección "¿Cómo funciona?" en fondo Blanco Puro para generar espacio y luz */
+.bg-black {
+    background-color: #FFFFFF !important; 
+    border-top: 1px solid #A9A098;
+    border-bottom: 1px solid #A9A098;
+}
+
+/* Tarjetas Minimalistas en Beige Claro */
+.card-custom {
+    background-color: #E7E3E0; /* Beige Claro */
+    border: 1px solid #A9A098; /* Borde Gris Piedra */
+    color: #292421;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-custom h3 {
+    color: #A6856A; /* Títulos de pasos en Marrón Arcilla */
+}
+
+.card-custom p {
+    color: #5a5450; /* Texto secundario en un café apagado y suave */
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(166, 133, 106, 0.1); /* Sombra cálida muy sutil */
+    border-color: #9B8784; /* El borde se oscurece ligeramente */
+}
+
+/* Botones principales en Marrón Arcilla */
+.btn-primary {
+    background-color: #A6856A;
+    border-color: #A6856A;
+    color: #FFFFFF;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #9B8784; /* Cambia a Gris Pardo en hover */
+    border-color: #9B8784;
+    color: #FFFFFF;
+}
+
+/* Botón secundario delineado */
+.btn-outline-light {
+    border-color: #292421;
+    color: #292421;
+    font-weight: 600;
+}
+
+.btn-outline-light:hover {
+    background-color: #292421;
+    color: #E7E3E0;
+}
+
+/* Badges / Etiquetas usando el hermoso Verde Oliva Apagado */
+.bg-primary {
+    background-color: #9FA292 !important; /* Verde Oliva Apagado */
+    color: #FFFFFF !important;
+}
+
+.tech-badge {
+    background-color: #FFFFFF;
+    color: #292421;
+    border: 1px solid #A9A098;
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    background-color: #9FA292; /* Cambia a Verde Oliva en hover */
+    color: #FFFFFF;
+    border-color: #9FA292;
+}
+
+/* Botones de Selección de Idioma (ESP / ENG) */
+.lang-btn {
+    border: 1px solid #A9A098;
+    color: #292421;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.lang-btn.active {
+    background-color: #292421;
+    color: #E7E3E0;
+    border-color: #292421;
+}
+
+/* Widget de simulación / Demo Box */
+.demo-widget {
+    background-color: #FFFFFF !important; /* Caja blanca */
+    border: 2px dashed #9FA292 !important; /* Borde punteado en Verde Oliva */
+    color: #292421 !important;
+}
+
+.demo-widget p {
+    color: #5a5450 !important;
+}
+
+.text-info {
+    color: #9FA292 !important; /* Íconos destacados en Verde Oliva */
+}
+
+.gesture-emoji {
+    font-size: 5rem;
+}
+
+.max-width-600 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer limpio en Beige Claro */
+footer {
+    background-color: #E7E3E0;
+    border-top: 1px solid #A9A098;
+    color: #292421;
+}

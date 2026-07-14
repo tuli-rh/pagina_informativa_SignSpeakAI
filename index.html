@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNMUTE — Tu voz en tus manos / Your voice in your hands</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Tus Estilos Personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 text-gradient" href="#">UNMUTE</a>
+            <div class="d-flex">
+                <button class="btn lang-btn me-2 active" id="btn-es" onclick="setLanguage('es')">ESP</button>
+                <button class="btn lang-btn" id="btn-en" onclick="setLanguage('en')">ENG</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <span class="badge bg-primary px-3 py-2 mb-3" id="hero-badge">Feria de Innovación Tecnológica</span>
+            <h1 class="display-3 fw-extrabold mb-3" id="hero-title">Tu voz en tus manos</h1>
+            <p class="lead text-muted mb-4 fs-4" id="hero-subtitle">Rompiendo barreras en la rutina diaria a través de Inteligencia Artificial.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#about" class="btn btn-primary btn-lg px-4 py-3" id="btn-learn">Saber más</a>
+                <button onclick="pronounceProjectName()" class="btn btn-outline-light btn-lg px-4 py-3" id="btn-listen">Escuchar "UNMUTE"</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN EL DESAFÍO -->
+    <section id="about" class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-3 text-gradient" id="about-title">El Desafío Diario</h2>
+                    <p class="lead text-secondary" id="about-text">
+                        Imaginar ir a pedir un café, preguntar por una dirección en la calle o comprar un boleto de autobús, y no poder hacerte entender. Para los más de 430 millones de personas sordas en el mundo, la rutina diaria está llena de estas barreras invisibles. UNMUTE nace para devolver la autonomía.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <!-- Aquí está el div modificado con la nueva clase demo-widget -->
+                    <div class="p-5 demo-widget rounded-3 border shadow-lg">
+                        <h4 class="text-info fw-bold" id="widget-demo-title">Simulación del Sistema</h4>
+                        <div class="gesture-emoji my-3">👋🏽 ➜ 🗣️</div>
+                        <p class="text-muted" id="widget-demo-desc">La IA traduce gestos a palabras al instante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿CÓMO FUNCIONA? -->
+    <section class="bg-black py-5">
+        <div class="container py-4">
+            <h2 class="text-center display-5 fw-bold mb-5" id="steps-main-title">¿Cómo Funciona?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 p-4 text-center">
+                        <div class="fs-1 text-info mb-3">📹</div>
+                        <h3 class="h4 fw-bold" id="step1-title">1. Captura</h3>
+                        <p class="text-secondary" id="step1-desc">Una cámara web estándar detecta el movimiento y el esqueleto de tus manos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 p-4 text-center">
+                        <div class="fs-1 text-info mb-3">🧠</div>
+                        <h3 class="h4 fw-bold" id="step2-title">2. Traducción IA</h3>
+                        <p class="text-secondary" id="step2-desc">Nuestro algoritmo analiza la postura de los dedos en milisegundos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 p-4 text-center">
+                        <div class="fs-1 text-info mb-3">🔊</div>
+                        <h3 class="h4 fw-bold" id="step3-title">3. Voz y Texto</h3>
+                        <p class="text-secondary" id="step3-desc">El sistema muestra la palabra en la pantalla y la reproduce en voz alta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section class="py-5">
+        <div class="container py-4 text-center">
+            <h2 class="display-5 fw-bold mb-4 text-gradient" id="tech-title">Tecnología que nos impulsa</h2>
+            <p class="lead text-secondary mb-5 max-width-600" id="tech-subtitle">Herramientas de vanguardia que hacen posible la inclusión en tiempo real.</p>
+            <div class="d-flex flex-wrap justify-content-center">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Google MediaPipe</span>
+                <span class="tech-badge">OpenCV</span>
+                <span class="tech-badge">Flask (Backend)</span>
+                <span class="tech-badge">Bootstrap 5</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Web Speech API</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center py-4 border-top border-secondary">
+        <div class="container">
+            <p class="text-muted mb-0" id="footer-text">© 2026 UNMUTE - Proyecto de Especialidad Tecnológica para la Inclusión.</p>
+        </div>
+    </footer>
+
+    <!-- Tu Lógica de Interacción -->
+    <script src="script.js"></script>
+</body>
+</html>
