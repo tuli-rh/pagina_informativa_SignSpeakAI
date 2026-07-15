@@ -81,51 +81,53 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 2: LA SOLUCIÓN UNIFICADA (Qué es, Propósito y Experiencia en Stand) -->
+    <!-- SECCIÓN 2: LA SOLUCIÓN UNIFICADA (Qué es, Propósito y Modos de Uso) -->
     <section id="solution" class="py-5 bg-white">
         <div class="container py-4">
-            <div class="row align-items-center">
-                <div class="col-lg-7 mb-5 mb-lg-0">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7 mb-4 mb-lg-0">
                     <span class="badge bg-primary px-3 py-2 mb-3" id="sol-badge">Nuestra Propuesta</span>
                     <h2 class="display-4 fw-bold mb-3 text-gradient" id="sol-title">Para esto hemos creado signSpeakAI</h2>
                     
                     <p class="lead text-secondary mb-4" id="sol-intro">
-                        Nace como un sistema interactivo y bidireccional diseñado para navegadores y dispositivos móviles. No es solo software; es un puente tecnológico que utiliza visión computacional avanzada e inteligencia artificial para devolver la autonomía a las personas sordas y conectar comunidades en sus interacciones cotidianas más sencillas.
+                        Nace como un sistema bidireccional diseñado para navegadores y dispositivos móviles. No es solo software; es un puente tecnológico que utiliza visión artificial e inteligencia artificial para devolver la autonomía a las personas sordas en sus interacciones cotidianas más sencillas.
                     </p>
                     
-                    <p class="text-secondary mb-4" id="sol-purpose-text">
-                        Creemos que la tecnología no solo debe resolver problemas complejos, sino mejorar el día a día humano. Diseñamos esta herramienta para que pedir un café, dar las gracias o saludar sea un derecho fluido para todos, construyendo empatía directa sin necesidad de hardware costoso o conexiones pesadas a internet.
+                    <p class="text-secondary mb-0" id="sol-purpose-text">
+                        Creemos que la tecnología no solo debe resolver problemas en laboratorios, sino mejorar el día a día humano. Diseñamos esta herramienta para que pedir un café, dar las gracias o saludar sea un derecho fluido para todos, construyendo empatía directa y sin necesidad de hardware costoso o conexiones pesadas a internet.
                     </p>
-
-                    <!-- Detalles interactivos de la solución en el Stand -->
-                    <div class="row g-3 mt-2">
-                        <div class="col-sm-6">
-                            <div class="p-3 border rounded-3 bg-light-neutral">
-                                <h5 class="fw-bold text-gradient mb-2" id="sol-feat1-title">🗣️ Modo Traducción</h5>
-                                <p class="small text-secondary mb-0" id="sol-feat1-desc">Muestra señas frente a la cámara y el sistema las traducirá a texto o voz en tiempo real.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="p-3 border rounded-3 bg-light-neutral">
-                                <h5 class="fw-bold text-gradient mb-2" id="sol-feat2-title">📖 Modo Aprendizaje</h5>
-                                <p class="small text-secondary mb-0" id="sol-feat2-desc">Accede a lecciones breves y ejercicios interactivos para comenzar a aprender Lengua de Señas.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <!-- Simulación Interactiva al lado -->
                 <div class="col-lg-5 text-center">
                     <div class="p-5 demo-widget rounded-3 border shadow-lg">
                         <h4 class="text-info fw-bold" id="widget-demo-title">Simulación del Sistema</h4>
                         <div class="gesture-emoji my-3">👋🏽 ➜ 🗣️</div>
-                        <p class="text-muted" id="widget-demo-desc">La IA traduce gestos a palabras al instante.</p>
+                        <p class="text-muted mb-0" id="widget-demo-desc">La IA traduce gestos a palabras al instante.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalle de los dos Modos de la Plataforma (La info del stand) -->
+            <div class="row g-4 mt-2">
+                <div class="col-md-6">
+                    <div class="p-4 rounded-3 border bg-light-neutral h-100">
+                        <div class="fs-2 mb-2">🗣️</div>
+                        <h3 class="h4 fw-bold text-gradient" id="mode1-title">Modo Traductor en Tiempo Real</h3>
+                        <p class="text-secondary mb-0" id="mode1-desc">Diseñado para la comunicación directa. El visitante del stand podrá activar la cámara de nuestro dispositivo, realizar diferentes señas y ver cómo el sistema de Inteligencia Artificial las reconoce y traduce instantáneamente a texto o voz digitalizada en tiempo real.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 rounded-3 border bg-light-neutral h-100">
+                        <div class="fs-2 mb-2">🎓</div>
+                        <h3 class="h4 fw-bold text-gradient" id="mode2-title">Modo Aprendizaje Guiado</h3>
+                        <p class="text-secondary mb-0" id="mode2-desc">La herramienta ideal para la inclusión activa. El sistema muestra una imagen de referencia con la postura correcta de una seña. El usuario debe imitarla frente a la cámara; nuestra IA analiza los ejes de sus movimientos indicándole si lo hizo correctamente o si necesita corregir su gesto.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN 3: CÓMO FUNCIONA EL SITIO/APP (El Flujo) -->
+    <!-- SECCIÓN 3: CÓMO FUNCIONA EL SITIO/APP (El Flujo Técnico) -->
     <section class="bg-black py-5">
         <div class="container py-4">
             <h2 class="text-center display-5 fw-bold mb-5" id="steps-main-title">Flujo de Funcionamiento del Software</h2>
@@ -134,21 +136,21 @@
                     <div class="card card-custom h-100 p-4 text-center">
                         <div class="fs-1 text-info mb-3">📹</div>
                         <h3 class="h4 fw-bold" id="step1-title">1. Captura de Esqueleto</h3>
-                        <p class="text-secondary" id="step1-desc">La cámara de tu dispositivo lee el flujo de video en tiempo real. Un algoritmo extrae la estructura ósea tridimensional de las manos a través de puntos clave (Keypoints).</p>
+                        <p class="text-secondary" id="step1-desc">La cámara web lee el flujo de video ordinario. Un algoritmo extrae la estructura ósea tridimensional de las manos en tiempo real mediante puntos clave (Keypoints).</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card card-custom h-100 p-4 text-center">
                         <div class="fs-1 text-info mb-3">🧠</div>
                         <h3 class="h4 fw-bold" id="step2-title">2. Red Neuronal Predictiva</h3>
-                        <p class="text-secondary" id="step2-desc">La IA procesa instantáneamente las posiciones tridimensionales de los dedos, contrastándolas de forma inteligente para detectar la seña específica ejecutada.</p>
+                        <p class="text-secondary" id="step2-desc">El motor compara el mapa de coordenadas con miles de muestras lingüísticas, interpretando la gramática de la lengua de señas y deduciendo palabras en milisegundos.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card card-custom h-100 p-4 text-center">
                         <div class="fs-1 text-info mb-3">🔊</div>
-                        <h3 class="h4 fw-bold" id="step3-title">3. Traducción Fluida</h3>
-                        <p class="text-secondary" id="step3-desc">El software genera el texto traducido al instante e invoca la síntesis de voz nativa del dispositivo, logrando una comunicación bidireccional fluida y audible.</p>
+                        <h3 class="h4 fw-bold" id="step3-title">3. Síntesis de Salida</h3>
+                        <p class="text-secondary" id="step3-desc">El software despliega la traducción textual de manera visible en pantalla e invoca el motor de voz nativo para leerla de manera audible para la persona oyente.</p>
                     </div>
                 </div>
             </div>

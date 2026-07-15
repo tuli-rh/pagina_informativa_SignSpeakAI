@@ -1,4 +1,4 @@
-// Base de datos de traducciones coherentemente estructurada
+// Base de datos de traducciones estructurada con la información del stand, problemáticas y modos interactivos
 const translations = {
     es: {
         heroBadge: "Feria de Innovación Tecnológica",
@@ -17,15 +17,17 @@ const translations = {
         stat3Desc: "Según el reporte de la WFD, la mayoría de los países del mundo aún no han otorgado reconocimiento constitucional oficial a sus lenguas de señas.",
         probNarrative: "Ir por un café, dar indicaciones en la calle o realizar trámites médicos son tareas cotidianas que se transforman en muros de aislamiento debido a la falta de herramientas de traducción directa y la escasez crítica de intérpretes humanos.",
         
-        // Sección Solución Unificada e Interactiva
+        // Sección Solución Unificada
         solBadge: "Nuestra Propuesta",
         solTitle: "Para esto hemos creado signSpeakAI",
-        solIntro: "Nace como un sistema interactivo y bidireccional diseñado para navegadores y dispositivos móviles. No es solo software; es un puente tecnológico que utiliza visión computacional avanzada e inteligencia artificial para devolver la autonomía a las personas sordas y conectar comunidades en sus interacciones cotidianas más sencillas.",
-        solPurposeText: "Creemos que la tecnología no solo debe resolver problemas complejos, sino mejorar el día a día humano. Diseñamos esta herramienta para que pedir un café, dar las gracias o saludar sea un derecho fluido para todos, construyendo empatía directa sin necesidad de hardware costoso o conexiones pesadas a internet.",
-        solFeat1Title: "🗣️ Modo Traducción",
-        solFeat1Desc: "Muestra señas frente a la cámara y el sistema las traducirá a texto y voz en tiempo real.",
-        solFeat2Title: "📖 Modo Aprendizaje",
-        solFeat2Desc: "Accede a lecciones breves y ejercicios interactivos para comenzar a aprender Lengua de Señas.",
+        solIntro: "Nace como un sistema bidireccional diseñado para navegadores y dispositivos móviles. No es solo software; es un puente tecnológico que utiliza visión artificial e inteligencia artificial para devolver la autonomía a las personas sordas en sus interacciones cotidianas más sencillas.",
+        solPurposeText: "Creemos que la tecnología no solo debe resolver problemas en laboratorios, sino mejorar el día a día humano. Diseñamos esta herramienta para que pedir un café, dar las gracias o saludar sea un derecho fluido para todos, construyendo empatía directa y sin necesidad de hardware costoso o conexiones pesadas a internet.",
+        
+        // Modos de la App
+        mode1Title: "Modo Traductor en Tiempo Real",
+        mode1Desc: "Diseñado para la comunicación directa. El visitante del stand podrá activar la cámara de nuestro dispositivo, realizar diferentes señas y ver cómo el sistema de Inteligencia Artificial las reconoce y traduce instantáneamente a texto o voz digitalizada en tiempo real.",
+        mode2Title: "Modo Aprendizaje Guiado",
+        mode2Desc: "La herramienta ideal para la inclusión activa. El sistema muestra una imagen de referencia con la postura correcta de una seña. El usuario debe imitarla frente a la cámara; nuestra IA analiza los ejes de sus movimientos indicándole si lo hizo correctamente o si necesita corregir su gesto.",
 
         // Simulador Widget
         widgetDemoTitle: "Simulación del Sistema",
@@ -34,11 +36,11 @@ const translations = {
         // Cómo Funciona
         stepsMainTitle: "Flujo de Funcionamiento del Software",
         step1Title: "1. Captura de Esqueleto",
-        step1Desc: "La cámara de tu dispositivo lee el flujo de video en tiempo real. Un algoritmo extrae la estructura ósea tridimensional de las manos a través de puntos clave (Keypoints).",
+        step1Desc: "La cámara web lee el flujo de video ordinario. Un algoritmo extrae la estructura ósea tridimensional de las manos en tiempo real mediante puntos clave (Keypoints).",
         step2Title: "2. Red Neuronal Predictiva",
-        step2Desc: "La IA procesa instantáneamente las posiciones tridimensionales de los dedos, contrastándolas de forma inteligente para detectar la seña específica ejecutada.",
-        step3Title: "3. Traducción Fluida",
-        step3Desc: "El software genera el texto traducido al instante e invoca la síntesis de voz nativa del dispositivo, logrando una comunicación bidireccional fluida y audible.",
+        step2Desc: "El motor compara el mapa de coordenadas con miles de muestras lingüísticas, interpretando la gramática de la lengua de señas y deduciendo palabras en milisegundos.",
+        step3Title: "3. Voz y Texto",
+        step3Desc: "El sistema muestra la palabra en la pantalla y la reproduce en voz alta.",
         
         footerText: "© 2026 signSpeakAI - Proyecto de Especialidad Tecnológica para la Inclusión."
     },
@@ -62,12 +64,14 @@ const translations = {
         // Solution Section
         solBadge: "Our Solution",
         solTitle: "This is why we created signSpeakAI",
-        solIntro: "It was born as an interactive and two-way system designed for browsers and mobile screens. It is more than just code; it's a technical bridge using advanced computer vision and artificial intelligence to bring autonomy back to deaf people and connect communities during basic everyday interactions.",
-        solPurposeText: "We believe technology shouldn't just solve complex equations, but rather improve the simplest, most human moments of our daily lives. We designed this tool so that getting a coffee, saying thank you, or greeting someone becomes an accessible right for everyone, building a direct bridge of empathy without heavy hardware or bandwidth issues.",
-        solFeat1Title: "🗣️ Translation Mode",
-        solFeat1Desc: "Perform hand gestures in front of your camera, and our system will translate them to text and audio in real-time.",
-        solFeat2Title: "📖 Learning Mode",
-        solFeat2Desc: "Access bite-sized lessons and interactive exercises to start learning Sign Language.",
+        solIntro: "It was born as a two-way system designed for browsers and mobile screens. It is more than just code; it's a technical bridge using computer vision and artificial intelligence to bring autonomy back to deaf people during basic everyday interactions.",
+        solPurposeText: "We believe technology shouldn't just solve lab equations, but rather improve the simplest, most human moments of our daily lives. We designed this tool so that getting a coffee, saying thank you, or greeting someone becomes an accessible right for everyone, building a direct bridge of empathy without heavy hardware or bandwidth issues.",
+        
+        // App Modes
+        mode1Title: "Real-Time Translator Mode",
+        mode1Desc: "Engineered for direct interaction. Booth visitors can launch the device camera, perform different sign gestures, and watch how the AI system captures and instantly decodes them into text or synthesized speech.",
+        mode2Title: "Guided Learning Mode",
+        mode2Desc: "The ultimate tool for active inclusion. The platform displays a graphic guide of a sign. Users mirror it using their webcam, and our localized neural network processes spatial points to evaluate precision, telling them if they nailed it or need to tweak their gesture.",
 
         // Simulator Widget
         widgetDemoTitle: "System Simulation",
@@ -76,11 +80,11 @@ const translations = {
         // How It Works
         stepsMainTitle: "How the Software Runs",
         step1Title: "1. Skeleton Capture",
-        step1Desc: "Your device camera reads the live video stream. An algorithm maps out three-dimensional joint positions (Keypoints) of your hand in real-time.",
-        step2Title: "2. Predictive Neural Network",
-        step2Desc: "The AI instantly processes finger joint coordinates, analyzing spelling rules and hand structures to classify the specific gesture.",
-        step3Title: "3. Seamless Translation",
-        step3Desc: "The software renders translation text on the screen and triggers the device's local speech engine, building fluent face-to-face communication.",
+        step1Desc: "Your basic webcam reads the raw video stream. A vision model maps out three-dimensional coordinates (Keypoints) of your hand skeleton in real-time.",
+        step2Title: "2. Predictive Model",
+        step2Desc: "Our network compares joint maps to a vocabulary database, decoding fingerspelling and hand movements in milliseconds.",
+        step3Title: "3. Text & Speech Synthesis",
+        step3Desc: "The system displays the word on screen and instantly triggers the local audio engine to read it aloud for hearing users.",
         
         footerText: "© 2026 signSpeakAI - Technology Specialty Project for Inclusion."
     }
@@ -118,10 +122,12 @@ function setLanguage(lang) {
     document.getElementById('sol-title').innerText = translations[lang].solTitle;
     document.getElementById('sol-intro').innerText = translations[lang].solIntro;
     document.getElementById('sol-purpose-text').innerText = translations[lang].solPurposeText;
-    document.getElementById('sol-feat1-title').innerText = translations[lang].solFeat1Title;
-    document.getElementById('sol-feat1-desc').innerText = translations[lang].solFeat1Desc;
-    document.getElementById('sol-feat2-title').innerText = translations[lang].solFeat2Title;
-    document.getElementById('sol-feat2-desc').innerText = translations[lang].solFeat2Desc;
+    
+    // Modos de la app
+    document.getElementById('mode1-title').innerText = translations[lang].mode1Title;
+    document.getElementById('mode1-desc').innerText = translations[lang].mode1Desc;
+    document.getElementById('mode2-title').innerText = translations[lang].mode2Title;
+    document.getElementById('mode2-desc').innerText = translations[lang].mode2Desc;
 
     // Widget e Instrucciones
     document.getElementById('widget-demo-title').innerText = translations[lang].widgetDemoTitle;
