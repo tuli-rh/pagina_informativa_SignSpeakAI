@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignSpeak AI — Tu voz en tus manos / Your voice in your hands</title>
+    <title>signSpeakAI — Tu voz en tus manos / Your voice in your hands</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts: Inter -->
@@ -16,7 +16,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-3 text-gradient" href="#">SignSpeak AI</a>
+            <a class="navbar-brand fw-bold fs-3 text-gradient" href="#">signSpeakAI</a>
             <div class="d-flex">
                 <button class="btn lang-btn me-2 active" id="btn-es" onclick="setLanguage('es')">ESP</button>
                 <button class="btn lang-btn" id="btn-en" onclick="setLanguage('en')">ENG</button>
@@ -31,24 +31,90 @@
             <h1 class="display-3 fw-extrabold mb-3" id="hero-title">Tu voz en tus manos</h1>
             <p class="lead text-muted mb-4 fs-4" id="hero-subtitle">Rompiendo barreras en la rutina diaria a través de Inteligencia Artificial.</p>
             <div class="d-flex justify-content-center">
-                <!-- Ahora solo queda un único y limpio botón de acción -->
-                <a href="#about" class="btn btn-primary btn-lg px-5 py-3" id="btn-learn">Saber más</a>
+                <a href="#problem" class="btn btn-primary btn-lg px-5 py-3" id="btn-learn">Saber más</a>
             </div>
         </div>
     </header>
 
-    <!-- SECCIÓN EL DESAFÍO -->
-    <section id="about" class="py-5">
+    <!-- SECCIÓN 1: LA PROBLEMÁTICA (Métricas reales) -->
+    <section id="problem" class="py-5 bg-light-neutral">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-gradient" id="prob-main-title">El Desafío de la Comunicación Silenciosa</h2>
+                <p class="text-muted fs-5" id="prob-main-subtitle">La brecha invisible que aísla a millones de personas en su vida cotidiana.</p>
+            </div>
+            
+            <div class="row g-4 text-center">
+                <!-- Tarjeta de Estadística 1 -->
+                <div class="col-md-4">
+                    <div class="card card-stat h-100 p-4">
+                        <div class="display-4 fw-bold text-gradient mb-2">+430M</div>
+                        <h4 class="fw-bold mb-2" id="stat1-title">Personas Sordas</h4>
+                        <p class="text-secondary small mb-0" id="stat1-desc">De acuerdo con datos de la OMS, más del 5% de la población mundial requiere asistencia por pérdida auditiva discapacitante.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta de Estadística 2 -->
+                <div class="col-md-4">
+                    <div class="card card-stat h-100 p-4">
+                        <div class="display-4 fw-bold text-gradient mb-2">85%</div>
+                        <h4 class="fw-bold mb-2" id="stat2-title">Barrera de Acceso</h4>
+                        <p class="text-secondary small mb-0" id="stat2-desc">La Federación Mundial de Sordos reporta que menos del 15% de los niños sordos a nivel global tienen acceso a educación formal en lengua de señas.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta de Estadística 3 -->
+                <div class="col-md-4">
+                    <div class="card card-stat h-100 p-4">
+                        <div class="display-4 fw-bold text-gradient mb-2">58%</div>
+                        <h4 class="fw-bold mb-2" id="stat3-title">Sin Reconocimiento</h4>
+                        <p class="text-secondary small mb-0" id="stat3-desc">Según el reporte de la WFD, la mayoría de los países del mundo aún no han otorgado reconocimiento constitucional oficial a sus lenguas de señas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Narrativa del problema -->
+            <div class="max-width-800 mx-auto mt-5 text-center">
+                <p class="lead text-secondary" id="prob-narrative">
+                    Ir por un café, dar indicaciones en la calle o realizar trámites médicos son tareas cotidianas que se transforman en muros de aislamiento debido a la falta de herramientas de traducción directa y la escasez crítica de intérpretes humanos.
+                </p>
+                <p class="text-muted small mt-2">Fuentes de información verificadas: <strong>Organización Mundial de la Salud (OMS)</strong> y <strong>Federación Mundial de Sordos (WFD)</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: LA SOLUCIÓN UNIFICADA (Qué es, Propósito y Experiencia en Stand) -->
+    <section id="solution" class="py-5 bg-white">
         <div class="container py-4">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="display-5 fw-bold mb-3 text-gradient" id="about-title">El Desafío Diario</h2>
-                    <p class="lead text-secondary" id="about-text">
-                        Imaginar ir a pedir un café, preguntar por una dirección en la calle o comprar un boleto de autobús, y no poder hacerte entender. Para los más de 430 millones de personas sordas en el mundo, la rutina diaria está llena de estas barreras invisibles. UNMUTE nace para devolver la autonomía.
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <span class="badge bg-primary px-3 py-2 mb-3" id="sol-badge">Nuestra Propuesta</span>
+                    <h2 class="display-4 fw-bold mb-3 text-gradient" id="sol-title">Para esto hemos creado signSpeakAI</h2>
+                    
+                    <p class="lead text-secondary mb-4" id="sol-intro">
+                        Nace como un sistema interactivo y bidireccional diseñado para navegadores y dispositivos móviles. No es solo software; es un puente tecnológico que utiliza visión computacional avanzada e inteligencia artificial para devolver la autonomía a las personas sordas y conectar comunidades en sus interacciones cotidianas más sencillas.
                     </p>
+                    
+                    <p class="text-secondary mb-4" id="sol-purpose-text">
+                        Creemos que la tecnología no solo debe resolver problemas complejos, sino mejorar el día a día humano. Diseñamos esta herramienta para que pedir un café, dar las gracias o saludar sea un derecho fluido para todos, construyendo empatía directa sin necesidad de hardware costoso o conexiones pesadas a internet.
+                    </p>
+
+                    <!-- Detalles interactivos de la solución en el Stand -->
+                    <div class="row g-3 mt-2">
+                        <div class="col-sm-6">
+                            <div class="p-3 border rounded-3 bg-light-neutral">
+                                <h5 class="fw-bold text-gradient mb-2" id="sol-feat1-title">🗣️ Modo Traducción</h5>
+                                <p class="small text-secondary mb-0" id="sol-feat1-desc">Muestra señas frente a la cámara y el sistema las traducirá a texto o voz en tiempo real.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-3 border rounded-3 bg-light-neutral">
+                                <h5 class="fw-bold text-gradient mb-2" id="sol-feat2-title">📖 Modo Aprendizaje</h5>
+                                <p class="small text-secondary mb-0" id="sol-feat2-desc">Accede a lecciones breves y ejercicios interactivos para comenzar a aprender Lengua de Señas.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 text-center">
-                    <!-- Aquí está el div modificado con la nueva clase demo-widget -->
+                <!-- Simulación Interactiva al lado -->
+                <div class="col-lg-5 text-center">
                     <div class="p-5 demo-widget rounded-3 border shadow-lg">
                         <h4 class="text-info fw-bold" id="widget-demo-title">Simulación del Sistema</h4>
                         <div class="gesture-emoji my-3">👋🏽 ➜ 🗣️</div>
@@ -59,49 +125,32 @@
         </div>
     </section>
 
-    <!-- ¿CÓMO FUNCIONA? -->
+    <!-- SECCIÓN 3: CÓMO FUNCIONA EL SITIO/APP (El Flujo) -->
     <section class="bg-black py-5">
         <div class="container py-4">
-            <h2 class="text-center display-5 fw-bold mb-5" id="steps-main-title">¿Cómo Funciona?</h2>
+            <h2 class="text-center display-5 fw-bold mb-5" id="steps-main-title">Flujo de Funcionamiento del Software</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card card-custom h-100 p-4 text-center">
                         <div class="fs-1 text-info mb-3">📹</div>
-                        <h3 class="h4 fw-bold" id="step1-title">1. Captura</h3>
-                        <p class="text-secondary" id="step1-desc">Una cámara web estándar detecta el movimiento y el esqueleto de tus manos.</p>
+                        <h3 class="h4 fw-bold" id="step1-title">1. Captura de Esqueleto</h3>
+                        <p class="text-secondary" id="step1-desc">La cámara de tu dispositivo lee el flujo de video en tiempo real. Un algoritmo extrae la estructura ósea tridimensional de las manos a través de puntos clave (Keypoints).</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card card-custom h-100 p-4 text-center">
                         <div class="fs-1 text-info mb-3">🧠</div>
-                        <h3 class="h4 fw-bold" id="step2-title">2. Traducción IA</h3>
-                        <p class="text-secondary" id="step2-desc">Nuestro algoritmo analiza la postura de los dedos en milisegundos.</p>
+                        <h3 class="h4 fw-bold" id="step2-title">2. Red Neuronal Predictiva</h3>
+                        <p class="text-secondary" id="step2-desc">La IA procesa instantáneamente las posiciones tridimensionales de los dedos, contrastándolas de forma inteligente para detectar la seña específica ejecutada.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card card-custom h-100 p-4 text-center">
                         <div class="fs-1 text-info mb-3">🔊</div>
-                        <h3 class="h4 fw-bold" id="step3-title">3. Voz y Texto</h3>
-                        <p class="text-secondary" id="step3-desc">El sistema muestra la palabra en la pantalla y la reproduce en voz alta.</p>
+                        <h3 class="h4 fw-bold" id="step3-title">3. Traducción Fluida</h3>
+                        <p class="text-secondary" id="step3-desc">El software genera el texto traducido al instante e invoca la síntesis de voz nativa del dispositivo, logrando una comunicación bidireccional fluida y audible.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TECNOLOGÍAS -->
-    <section class="py-5">
-        <div class="container py-4 text-center">
-            <h2 class="display-5 fw-bold mb-4 text-gradient" id="tech-title">Tecnología que nos impulsa</h2>
-            <p class="lead text-secondary mb-5 max-width-600" id="tech-subtitle">Herramientas de vanguardia que hacen posible la inclusión en tiempo real.</p>
-            <div class="d-flex flex-wrap justify-content-center">
-                <span class="tech-badge">Python</span>
-                <span class="tech-badge">Google MediaPipe</span>
-                <span class="tech-badge">OpenCV</span>
-                <span class="tech-badge">Flask (Backend)</span>
-                <span class="tech-badge">Bootstrap 5</span>
-                <span class="tech-badge">JavaScript</span>
-                <span class="tech-badge">Web Speech API</span>
             </div>
         </div>
     </section>
@@ -109,7 +158,7 @@
     <!-- FOOTER -->
     <footer class="bg-dark text-center py-4 border-top border-secondary">
         <div class="container">
-            <p class="text-muted mb-0" id="footer-text">© 2026 UNMUTE - Proyecto de Especialidad Tecnológica para la Inclusión.</p>
+            <p class="text-muted mb-0" id="footer-text">© 2026 signSpeakAI - Proyecto de Especialidad Tecnológica para la Inclusión.</p>
         </div>
     </footer>
 
