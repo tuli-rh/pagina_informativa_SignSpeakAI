@@ -23,11 +23,37 @@ body {
     font-weight: 800;
 }
 
+/* HERO SECTION CON IMAGEN DE FONDO */
 .hero-section {
-    background: linear-gradient(180deg, #E7E3E0 0%, #FFFFFF 100%); 
+    position: relative;
     padding: 100px 0;
     border-bottom: 1px solid #A9A098;
     color: #292421;
+
+    /* Configuración de la imagen */
+    background-image: url('SignSpeak_AI_fondo.png'); /* Cambia 'hero-bg.jpg' por el nombre exacto de tu archivo */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Capa semi-transparente para suavizar la imagen y armonizarla con tu paleta neutra */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(231, 227, 224, 0.55); /* Usa tu color #E7E3E0 con transparencia */
+    z-index: 1;
+}
+
+/* Asegura que los textos y botones estén por encima de la imagen */
+.hero-section .container {
+    position: relative;
+    z-index: 2;
 }
 
 .text-gradient {
