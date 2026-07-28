@@ -31,7 +31,7 @@ body {
     color: #292421;
 
     /* Configuración de la imagen */
-    background-image: url('SignSpeak_AI_fondo.png'); /* Cambia 'hero-bg.jpg' por el nombre exacto de tu archivo */
+    background-image: url('img/SignSpeak_AI_fondo.png'); /* Cambia 'hero-bg.jpg' por el nombre exacto de tu archivo */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
