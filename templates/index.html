@@ -9,8 +9,9 @@
     <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- Tus Estilos Personalizados -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
     <!-- NAVBAR -->
@@ -105,15 +106,14 @@
                     <div class="d-flex flex-column align-items-center justify-content-center my-3 gap-2">
             
                     <div class="d-flex align-items-center justify-content-center" style="height: 120px;">
-                        <img src="img/mediapipegif.gif" alt="Entrada de gesto" class="img-fluid rounded border shadow-sm" style="max-height: 110px; object-fit: contain;">
-                 </div>
+                        <img src="{{ url_for('static', filename='img/flecha.png') }}" alt="Flecha">
 
             <div class="d-flex align-items-center justify-content-center my-2" style="height: 55px;">
-                <img src="img/flecha.png" alt="Flecha hacia abajo" class="img-fluid" style="max-height: 50px; object-fit: contain;" onerror="this.onerror=null; this.src='flecha.png';">
+                <img src="static/img/flecha.png" alt="Flecha hacia abajo" class="img-fluid" style="max-height: 50px; object-fit: contain;" onerror="this.onerror=null; this.src='flecha.png';">
             </div>
 
             <div class="d-flex align-items-center justify-content-center" style="height: 110px;">
-                <img src="img/audio-removebg-preview.png" alt="Salida de Voz" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+                <img src="static/img/audio-removebg-preview.png" alt="Salida de Voz" class="img-fluid" style="max-height: 100px; object-fit: contain;">
             </div>
 
         </div>
@@ -153,7 +153,7 @@
                 <div class="col-md-4">
                     <div class="card card-custom h-100 p-4 text-center">
                         <div class="mb-4 d-flex justify-content-center align-items-center" style="height: 130px;">
-                            <img src="img/mediapipe-removebg-preview.png" alt="Captura de Esqueleto" class="img-fluid" style="max-height: 120px; object-fit: contain;">
+                            <img src="static/img/mediapipe-removebg-preview.png" alt="Captura de Esqueleto" class="img-fluid" style="max-height: 120px; object-fit: contain;">
                         </div>
                         <h3 class="h4 fw-bold" id="step1-title">1. Captura de Esqueleto</h3>
                         <p class="text-secondary" id="step1-desc">La cámara web lee el flujo de video ordinario. Un algoritmo extrae la estructura ósea tridimensional de las manos en tiempo real mediante puntos clave (Keypoints).</p>
@@ -164,7 +164,7 @@
                 <div class="col-md-4">
                     <div class="card card-custom h-100 p-4 text-center">
                         <div class="mb-4 d-flex justify-content-center align-items-center" style="height: 130px;">
-                            <img src="img/cerebro_digital-removebg-preview.png" alt="Red Neuronal Predictiva" class="img-fluid" style="max-height: 120px; object-fit: contain;">
+                            <img src="static/img/cerebro_digital-removebg-preview.png" alt="Red Neuronal Predictiva" class="img-fluid" style="max-height: 120px; object-fit: contain;">
                         </div>
                         <h3 class="h4 fw-bold" id="step2-title">2. Red Neuronal Predictiva</h3>
                         <p class="text-secondary" id="step2-desc">El motor compara el mapa de coordenadas con miles de muestras lingüísticas, interpretando la gramática de la lengua de señas y deduciendo palabras en milisegundos.</p>
@@ -175,7 +175,7 @@
                 <div class="col-md-4">
                     <div class="card card-custom h-100 p-4 text-center">
                         <div class="mb-4 d-flex justify-content-center align-items-center" style="height: 130px;">
-                            <img src="img/sonido-removebg-preview.png" alt="Síntesis de Salida" class="img-fluid" style="max-height: 120px; object-fit: contain;">
+                            <img src="static/img/sonido-removebg-preview.png" alt="Síntesis de Salida" class="img-fluid" style="max-height: 120px; object-fit: contain;">
                         </div>
                         <h3 class="h4 fw-bold" id="step3-title">3. Síntesis de Salida</h3>
                         <p class="text-secondary" id="step3-desc">El software despliega la traducción textual de manera visible en pantalla e invoca el motor de voz nativo para leerla de manera audible para la persona oyente.</p>
@@ -194,6 +194,6 @@
     </footer>
 
     <!-- Tu Lógica de Interacción -->
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
