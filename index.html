@@ -27,13 +27,13 @@
     <!-- HERO SECTION -->
     <header class="hero-section text-center">
         <div class="container">
-            <span class="badge bg-primary px-3 py-2 mb-3" id="hero-badge">Feria de Innovación Tecnológica</span>
-            <h1 class="display-3 fw-extrabold mb-3" id="hero-title">Tu voz en tus manos</h1>
-            <p class="lead text-muted mb-4 fs-4" id="hero-subtitle">Rompiendo barreras en la rutina diaria a través de Inteligencia Artificial.</p>
-            <div class="d-flex justify-content-center">
-                <a href="#problem" class="btn btn-primary btn-lg px-5 py-3" id="btn-learn">Saber más</a>
-            </div>
+        <span class="badge bg-primary px-3 py-2 mb-3" id="hero-badge">Feria de Innovación Tecnológica</span>
+        <h1 class="display-3 fw-extrabold mb-3 text-dark" id="hero-title">Tu voz en tus manos</h1>
+        <p class="lead text-dark fw-medium mb-4 fs-4" id="hero-subtitle">Rompiendo barreras en la rutina diaria a través de Inteligencia Artificial.</p>
+        <div class="d-flex justify-content-center">
+            <a href="#problem" class="btn btn-primary btn-lg px-5 py-3" id="btn-learn">Saber más</a>
         </div>
+    </div>
     </header>
 
     <!-- SECCIÓN 1: LA PROBLEMÁTICA (Métricas reales) -->
@@ -99,12 +99,28 @@
                 </div>
                 <!-- Simulación Interactiva al lado -->
                 <div class="col-lg-5 text-center">
-                    <div class="p-5 demo-widget rounded-3 border shadow-lg">
-                        <h4 class="text-info fw-bold" id="widget-demo-title">Simulación del Sistema</h4>
-                        <div class="gesture-emoji my-3">👋🏽 ➜ 🗣️</div>
-                        <p class="text-muted mb-0" id="widget-demo-desc">La IA traduce gestos a palabras al instante.</p>
-                    </div>
-                </div>
+                    <div class="p-4 demo-widget rounded-3 border shadow-lg">
+                     <h4 class="text-info fw-bold mb-3" id="widget-demo-title">Simulación del Sistema</h4>
+        
+                    <div class="d-flex flex-column align-items-center justify-content-center my-3 gap-2">
+            
+                    <div class="d-flex align-items-center justify-content-center" style="height: 120px;">
+                        <img src="img/mediapipegif.gif" alt="Entrada de gesto" class="img-fluid rounded border shadow-sm" style="max-height: 110px; object-fit: contain;">
+                 </div>
+
+            <div class="d-flex align-items-center justify-content-center my-2" style="height: 55px;">
+                <img src="img/flecha.png" alt="Flecha hacia abajo" class="img-fluid" style="max-height: 50px; object-fit: contain;" onerror="this.onerror=null; this.src='flecha.png';">
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center" style="height: 110px;">
+                <img src="img/audio-removebg-preview.png" alt="Salida de Voz" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+            </div>
+
+        </div>
+
+        <p class="text-muted mb-0 mt-3" id="widget-demo-desc">La IA traduce gestos a palabras y audio al instante.</p>
+    </div>
+</div>
             </div>
 
             <!-- Detalle de los dos Modos de la Plataforma (La info del stand) -->
@@ -132,27 +148,40 @@
         <div class="container py-4">
             <h2 class="text-center display-5 fw-bold mb-5" id="steps-main-title">Flujo de Funcionamiento del Software</h2>
             <div class="row g-4">
+                
+                <!-- Tarjeta 1 -->
                 <div class="col-md-4">
                     <div class="card card-custom h-100 p-4 text-center">
-                        <div class="fs-1 text-info mb-3">📹</div>
+                        <div class="mb-4 d-flex justify-content-center align-items-center" style="height: 130px;">
+                            <img src="img/mediapipe-removebg-preview.png" alt="Captura de Esqueleto" class="img-fluid" style="max-height: 120px; object-fit: contain;">
+                        </div>
                         <h3 class="h4 fw-bold" id="step1-title">1. Captura de Esqueleto</h3>
                         <p class="text-secondary" id="step1-desc">La cámara web lee el flujo de video ordinario. Un algoritmo extrae la estructura ósea tridimensional de las manos en tiempo real mediante puntos clave (Keypoints).</p>
                     </div>
                 </div>
+
+                <!-- Tarjeta 2 -->
                 <div class="col-md-4">
                     <div class="card card-custom h-100 p-4 text-center">
-                        <div class="fs-1 text-info mb-3">🧠</div>
+                        <div class="mb-4 d-flex justify-content-center align-items-center" style="height: 130px;">
+                            <img src="img/cerebro_digital-removebg-preview.png" alt="Red Neuronal Predictiva" class="img-fluid" style="max-height: 120px; object-fit: contain;">
+                        </div>
                         <h3 class="h4 fw-bold" id="step2-title">2. Red Neuronal Predictiva</h3>
                         <p class="text-secondary" id="step2-desc">El motor compara el mapa de coordenadas con miles de muestras lingüísticas, interpretando la gramática de la lengua de señas y deduciendo palabras en milisegundos.</p>
                     </div>
                 </div>
+
+                <!-- Tarjeta 3 -->
                 <div class="col-md-4">
                     <div class="card card-custom h-100 p-4 text-center">
-                        <div class="fs-1 text-info mb-3">🔊</div>
+                        <div class="mb-4 d-flex justify-content-center align-items-center" style="height: 130px;">
+                            <img src="img/sonido-removebg-preview.png" alt="Síntesis de Salida" class="img-fluid" style="max-height: 120px; object-fit: contain;">
+                        </div>
                         <h3 class="h4 fw-bold" id="step3-title">3. Síntesis de Salida</h3>
                         <p class="text-secondary" id="step3-desc">El software despliega la traducción textual de manera visible en pantalla e invoca el motor de voz nativo para leerla de manera audible para la persona oyente.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
